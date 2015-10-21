@@ -32,6 +32,7 @@ namespace SimpleCSV_Parser_App
         {
             CSVParser csvParser = new CSVParser();
             csvParser.RawText = this.txtInput.Text;
+            csvParser.HasHeaderRow = this.cbxHasHeaderRow.IsChecked.Value;
 
             var parsedData = csvParser.Parse();
 

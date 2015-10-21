@@ -21,8 +21,11 @@
         <TextBlock FontSize="24" >Basic CSV Parsing</TextBlock>
 
         <TextBox Name="txtInput" Grid.Row="2" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
-        <Button Name="btnParse" Content="Parse CSV" Grid.Row="3" HorizontalAlignment="Center" Click="btnParse_Click"></Button>
-        
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,0,10,0">
+            <CheckBox Name="cbxHasHeaderRow" Content="Has Header Row" Margin="10"></CheckBox>
+            <Button Name="btnParse" Content="Parse CSV" Grid.Row="3" Click="btnParse_Click"></Button>
+        </StackPanel>
         <TextBlock FontSize="18" Grid.Row="1" >Input CSV:</TextBlock>
         <TextBlock FontSize="18" Grid.Row="4" >Output:</TextBlock>
 
