@@ -10,7 +10,6 @@ namespace CSVParserComponent
     public interface IParserEngine
     {
         IAsyncOperation<IList<string>> ExtractRecords(char lineDelimiter, string csvText);
-
         IAsyncOperation<IList<string>> ExtractFields(char delimiter, char quote, string csvLine);
     }
 }
